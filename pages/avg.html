@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Average</title>
+</head>
+<body>
+    <div class="form">
+    <label>How many Fields do u want</label>
+    <input id="numberinp" type="text" >
+    <button onClick="calc()">Click Me</button>
+    </div>
+    <script>
+        var num,i;
+
+        function calc(){
+        var num;
+        num = document.getElementById("numberinp").value;
+        console.log(num);
+
+        for(i=0 ; i < num ;i++){
+                /*document.write("Enter Value Of " + num+1 + "th Element\n");*/
+                console.log(i);
+        }
+        }
+
+        function gen(){
+
+            for(i=0 ; i < num ;i++){
+                /*document.write("Enter Value Of " + num+1 + "th Element\n");*/
+                console.log(i);
+                var created = document.createElement('input');
+                var addhere = document.getElementById('form')
+                addhere.appendChild(created);
+            }
+
+        }
+    </script>
+
+
+
+</body>
+</html>
