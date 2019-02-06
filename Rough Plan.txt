@@ -1,2 +1,35 @@
 Rough Plan Of the Webpage :--
 
+# Page 1 :--
+
+1. Average Of Many Numbers
+
+Input : Enter How Many Numbers Do You Want
+
+Op : Print Sum and Average
+
+2. Finding Root Of QE 
+
+Input : Input Value of a,b,c;
+Output : Find X1 X2
+
+3. Permutuation And Combination :-
+
+Input : Input N R 
+Output : NCR , NPR ;
+
+4. Writing Table :-
+
+Input : Enter Number 
+Output : Display Table with 3 Columns
+
+viz 1.Sr no
+    2.Multiplication
+    3. Answer
+
+5. Area Of Different Shapes :
+
+    1. Circle
+    2. Rectangle
+    3. Traingle
+

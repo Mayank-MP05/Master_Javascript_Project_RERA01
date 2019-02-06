@@ -1,6 +1,12 @@
+@import url("https://fonts.googleapis.com/css?family=Bangers");
+@import url("https://fonts.googleapis.com/css?family=Karla");
 * {
   padding: 0%;
   margin: 0%;
+}
+
+body {
+  font-family: 'Karla', sans-serif;
 }
 
 .fixedleftbar {
@@ -37,6 +43,10 @@
   margin: 5%;
 }
 
+.fixedleftbar ul li div:hover {
+  background-color: white;
+}
+
 .navbar {
   padding-left: 0%;
   padding-top: 0%;
@@ -66,9 +76,9 @@
 .wrapper {
   background-color: red;
   margin-top: 80px;
-  margin-left: 250px;
-  height: 80%;
-  width: 75%;
+  margin-left: 260px;
+  height: 60%;
+  width: 50%;
   text-align: left;
   padding-left: 25%;
 }
