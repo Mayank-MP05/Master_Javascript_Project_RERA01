@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+
+<body>
+    <style>
+    .gris{
+        display: flex;
+    }
+    
+    .gris button{
+        padding: 0.5%;
+        grid-template-columns: 1fr 1fr;
+        margin: 2%;
+    }
+    </style>
+
+    <div class="wrapper">
+        <label>Enter The Value Of n :- <br></label>
+        <input type="text" id="n"><br><br>
+
+        <label>Enter The Value Of r :- <br></label>
+        <input type="text" id="r"><br><br>
+    <div class="gris">
+        <button onclick="showfact()">Factorials</button>
+        <button onclick="showperm()">Permutuation</button>
+        <button onclick="showcombi()">Combination</button>
+        
+        <button onclick="showall()">Show All</button>
+    </div>
+        <div id="op"></div>
+    </div>
+    <script>
+        function showfact(){
+            var n = document.getElementById('n').value ;
+            var r = document.getElementById('r').value ;
+            document.getElementById('op').innerHTML = "n! is = " + n +"! = "+fact(n)+"<br>r! is = " + r +"! = "+fact(r)+"<br>(n-r)! is = " + (n-r) +"! = "+fact(n-r)+"<br>";
+        }
+
+        function showperm(){
+            var n = document.getElementById('n').value ;
+            var r = document.getElementById('r').value ;
+            document.getElementById('op').style.fontSize = "50px";
+            document.getElementById('op').innerHTML = "<sup>n</sup>P<sub>r</sub> = "+perm();
+        }
+
+        function showcombi(){
+            var n = document.getElementById('n').value ;
+            var r = document.getElementById('r').value ;
+            document.getElementById('op').style.fontSize = "50px";
+            document.getElementById('op').innerHTML = "<sup>n</sup>C<sub>r</sub> = "+combi();
+        }
+
+        function showall(){
+            var n = document.getElementById('n').value ;
+            var r = document.getElementById('r').value ;
+            document.getElementById('op').innerHTML = "n! is = " + n +"! = "+fact(n)+"<br>r! is = " + r +"! = "+fact(r)+"<br>(n-r)! is = " + (n-r) +"! = "+fact(n-r)+"<br>";
+        
+            document.getElementById('op').style.fontSize = "50px";
+            document.getElementById('op').innerHTML = "<sup>n</sup>C<sub>r</sub> = "+combi();
+            var combi = document.getElementById('op').innerHTML = "<sup>n</sup>C<sub>r</sub> = "+combi();
+            combi.append(combi);
+        }
+        
+        }
+    </script>
+
+    <script>
+            function fact(num){
+                var i,fact;
+                var num = num;
+                fact =1;
+                for(i = 1;i <= num;i++){
+                    fact = fact * i;
+                }
+                return fact;
+            }
+
+            function perm(){
+                var n = document.getElementById('n').value ;
+                var r = document.getElementById('r').value ;
+                var op;
+                var numer,denom;
+                numer = fact(n);
+                denom = fact(n-r);
+                op = numer/denom;
+                return op;
+            }
+
+            function combi(){
+                var n = document.getElementById('n').value ;
+                var r = document.getElementById('r').value ;
+                var op;
+                var numer,denom;
+                numer = fact(n);
+                denom = fact(n-r)* fact(r);
+                op = numer/denom;
+                return op;
+                console.log(op);
+            }
+            
+
+            function print(){
+                document.getElementById('op').innerHTML = "Value of Permutuation is "+perm()+ "<br>Value of Combination is "+combi();
+            }
+    </script>
+
+</body>
+</html>
