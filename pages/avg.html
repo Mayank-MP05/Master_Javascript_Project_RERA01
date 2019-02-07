@@ -10,6 +10,48 @@
     <div class="wrapper">
         <label>How Many Numbers Do You Want :-</label><br>
         <input type="text" id="ip_col">
+        <button onclick="getf()">Get Fields</button>
+        <div id="op"></div>
+
+
     </div>
+
+    <script>
+        var code;
+
+        function getf(){
+            var n = document.getElementById('ip_col').value;
+            var i;
+            document.getElementById('op').innerHTML = "";
+            code = document.getElementById('op').innerHTML;
+            for(i = 0;i < n ;i++){
+                code += document.getElementById('op').innerHTML = '<br><label>Enter the Value of Element no.</label><br><input type="text" id='+ i +'>';
+                if(i == (n-1)){
+                    code += document.getElementById('op').innerHTML = '<br><button onclick="calc()">Get Sum And Average</button>';
+                }
+            }
+            document.getElementById('op').innerHTML = code;
+        }
+
+            function calc(){
+            var n = document.getElementById('ip_col').value;
+            var i;
+            
+            var sum = 0;
+            for(i = 0; i < n;i++){
+                sum += document.getElementById(i).value;
+            }
+            console.log(sum);
+            code += document.getElementById('op').innerHTML = "<br>Sum of The Inputs is "+sum;
+
+            var Average = sum / n;
+            code += document.getElementById('op').innerHTML = "<br>Average of The Inputs is "+Average;
+
+            document.getElementById('op').innerHTML = code;
+            }
+        
+
+    </script>
+
 </body>
 </html>
