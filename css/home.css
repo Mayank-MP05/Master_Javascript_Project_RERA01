@@ -74,11 +74,10 @@ body {
 }
 
 .wrapper {
-  background-color: red;
   margin-top: 80px;
   margin-left: 260px;
-  height: 60%;
-  width: 50%;
+  min-height: auto;
+  min-width: 100%;
   text-align: left;
   padding-left: 25%;
 }

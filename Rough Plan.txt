@@ -33,3 +33,24 @@ viz 1.Sr no
     2. Rectangle
     3. Traingle
 
+6. Playing With Numbers :-
+
+    - Prime no
+    - Palindrome Checker
+    - fibonacci Series
+
+
+7. Playing with Matrix :-
+
+    - Matrix Addition
+    - Matrix Substraction
+    - Matrix Multiplication
+
+8. Image Slideshow using JS
+
+9. Image and Video change all Properties
+
+10. 
+
+/* Design Whole Site Responsively */
+
