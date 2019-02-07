@@ -14,18 +14,38 @@
     </div>  
 
     <script>
-        
-        var n = document.getElementById('n').value ;
+
 
         function generate(){
 
-            code = "
+
+            var n = document.getElementById('n').value ;
+            var i;
+
+            var code = "\
+            <tr><th>Sr. No</th>\
+            <th>Calculation</th>\
+            <th>Answer</th></tr>";
+
+            var code2 = '';
+
+            for(i=1;i<=10;i++){
+            var code3 = `<tr>\
+                <td>` + i +`</td>\
+                <td>`+ n +' X '+ i +`</td>\
+                <td>`+ n * i +`</td>
+            </tr>`; 
+
+            code2 += code3;
             
+            }
+
+            var  codeall = code + code2;
             
-            
-            "
+            document.getElementById('table_id').innerHTML = codeall;
+
         }
-    
+
     </script>
 </body>
 </html>
