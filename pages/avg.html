@@ -39,7 +39,9 @@
             
             var sum = 0;
             for(i = 0; i < n;i++){
-                sum += document.getElementById(i).value;
+                sum = sum + document.getElementById(i).value;
+                console.log(i);
+                console.log(sum);
             }
             console.log(sum);
             code += document.getElementById('op').innerHTML = "<br>Sum of The Inputs is "+sum;
