@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+<body>
+    <div class="wrapper">
+        <label>Enter the Length</label><br>
+        <input type="text" name="len" id="len"><br><br>
+        
+        <label>Enter the Bredth</label><br>
+        <input type="text" name="bre" id="bre"><br><br>
+        <button onclick="op()">Calculate</button>
+        <p id="op"></p>
+
+    </div>
+    <script>
+        function op(){
+        var len = document.getElementById('len').value ;
+        var bre = document.getElementById('bre').value ;
+        console.log(len);
+        var area = len * bre ;
+        document.getElementById('op').innerHTML = "The Area of Rectangle is "+ area;
+        }
+    </script>
+</body>
+</html>
