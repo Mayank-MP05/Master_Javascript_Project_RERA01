@@ -6,10 +6,33 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 </head>
 <body>
+    <style>
+        *{
+            padding: 0.5%;
+            margin: 0.5%;
+        }
+        #table_id{
+            border: 10px solid black;
+            padding: 2%;
+        }
+
+        th{
+            border: 7px solid black;
+            padding : 3.5%;      
+        }
+        td,tr{
+            border: 5px solid black;
+            padding: 2.5%;
+        }
+    </style>
     <div class="wrapper">
-        <label>Enter The Digit You Want Table Of :-</label>
-        <input type="text" id="n">
-        <button onclick="generate()">Generate Table</button>
+        <label>Enter The Digit You Want Table Of :-</label><br>
+        <input type="text" id="n"><br>
+
+        <label>How Many Rows Do You Want :-</label><br>
+        <input type="text" id="r"><br>
+
+        <button onclick="generate()">Generate Table</button><hr>
         <table id="table_id"></table>
     </div>  
 
@@ -20,6 +43,10 @@
 
 
             var n = document.getElementById('n').value ;
+
+            var r = document.getElementById('r').value ;
+
+
             var i;
 
             var code = "\
@@ -29,7 +56,7 @@
 
             var code2 = '';
 
-            for(i=1;i<=10;i++){
+            for(i=1;i<=r;i++){
             var code3 = `<tr>\
                 <td>` + i +`</td>\
                 <td>`+ n +' X '+ i +`</td>\
