@@ -9,9 +9,9 @@
 <body>
     <div class="wrapper">
         <label>Enter the Values Of a,b,c :-<br></label>
-        <input type="text" id="a"><br>
-        <input type="text" id="b"><br>
-        <input type="text" id="c"><br>
+        <label>a = </label><input type="text" id="a"><br>
+        <label>b = </label><input type="text" id="b"><br>
+        <label>c = </label><input type="text" id="c"><br>
         <button onclick="roots()">Calculate Roots</button>
         <div id="op"></div>
     </div>  
@@ -20,19 +20,21 @@
         function roots(){
            var a = document.getElementById('a').value;
            var b = document.getElementById('b').value;
-           var c = document.getElementById('c').value;
-            
-            console.log(a);
+           var c = document.getElementById('c').value
 
             var d = b*b - 4*a*c;
-            var d = Math.sqrt(d).toPrecision(2);
 
-            console.log(d);
+            if(d < 0){
+                document.getElementById('op').innerHTML = "Equation Has No Real Roots";
+
+            }else{
+            var d = Math.sqrt(d).toPrecision(2);
 
             var x1 = (-b + d)/(2 * a);
             var x2 = (-b - d)/(2 * a);
 
             document.getElementById('op').innerHTML = "Roots Of the Given QE is : "+x1+" And "+x2;
+            }
         }
     </script>
 </body>
