@@ -28,3 +28,23 @@
    text-decoration: bold;
    color: black;
 }
+
+.fixedleftbar img{
+    width: 70%;
+    height: auto;
+}
+
+.fixedleftbar h1{
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+}
+
+.navbar img{
+    height: 90%;
+    padding: 0 1.5%; 
+}
+
+.navbar h1,p{
+    vertical-align: center;
+    margin: 1.5%;
+}
