@@ -3,7 +3,8 @@
     margin-left: 258px;
     margin-top: 88px;
     width: 1000px;
-    height: 500px;
+    height: 490px;
+    margin-bottom :8px;
 }
 
 .iframe_wrapper iframe{
