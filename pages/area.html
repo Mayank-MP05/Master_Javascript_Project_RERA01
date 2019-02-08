@@ -7,7 +7,7 @@
 </head>
 <body>
     <div class="wrapper">
-        <select id="input">
+        <select id="input_select">
             <option value="3">Traingle</option>
 
             <option value="4">Rectangle</option>
@@ -15,40 +15,66 @@
             <option value="0">Circle</option>
         </select>
         <button onclick="getf()">Get Fields</button>
+        <h1 id="titlearea"></h1>
 
-        <!---
-        <label>Enter the Length</label><br>
-        <input type="text" name="len" id="len"><br><br>
+        <label id="l1"></label><br>
+        <input id="i1" type="text" name="len"><br><br>
         
-        <label>Enter the Bredth</label><br>
-        <input type="text" name="bre" id="bre"><br><br>
-        <button onclick="op()">Calculate</button>
-        -->
-        <iframe id="opframe"></iframe>
+        <label id="l2">Enter the Bredth</label><br>
+        <input id="i2" type="text" name="bre"><br><br>
+        <button onclick="calcarea()">Calculate</button>
+
         <p id="op"></p>
 
     </div>
     <script>
-        function op(){
-        var len = document.getElementById('len').value ;
-        var bre = document.getElementById('bre').value ;
-        console.log(len);
-        var area = len * bre ;
-        document.getElementById('op').innerHTML = "The Area of Rectangle is "+ area;
-        }
-
-        function getf(){
-            var id = document.getElementById('input').value;
-            console.log(id);
-            
-            switch(id){
-                case 3 : 
-                
-                case 4 :
-
-                case 0 :
+        function calcarea(num){
+            var num = num ;
+            if(num == 3){
+                var b = document.getElementById('i1').value;
+                var h = document.getElementById('i2').value;
+                var area = 0.5 * b * h;
+                document.getElementById('op').innerHTML = "Area = "+ area;
+            }else if(num == 4){
+                var l = document.getElementById('i1').value;
+                var b = document.getElementById('i2').value;
+                var area = l * b;
+                document.getElementById('op').innerHTML = "Area = "+ area;
+            }else{
+                var r = document.getElementById('i1').value;
+                       
+                var area = 3.14 * r * r;
+                document.getElementById('op').innerHTML = "Area = "+ area;
             }
+        }
+    
+        function getf(){
+            var i = document.getElementById('input_select').value;
+            
+            
+            if(i == 3){
+                         document.getElementById('l1').innerHTML = "Enter The Base Of Traingle";
+                         document.getElementById('titlearea').innerHTML = "Area Of Traingle";
+                         document.getElementById('l2').innerHTML = "Enter The Hieght Of Traingle";
+                         
+                         
+            }else if(i == 4){
 
+                         document.getElementById('l1').innerHTML = "Enter The Length Of Rectangle";
+                         document.getElementById('titlearea').innerHTML = "Area Of Rectangle";
+                         document.getElementById('l2').innerHTML = "Enter The Bredth of Rectangle";
+                        calcarea(4);
+                        
+            }else{
+                        
+
+                         document.getElementById('l1').innerHTML = "Enter The Radious Of Circle";
+                         document.getElementById('titlearea').innerHTML = "Area Of Circle";
+                         document.getElementById('l2').style.display = 'none';
+                         document.getElementById('i2').style.display = 'none';
+                        calcarea(5);
+                        
+            }
         }
     </script>
 </body>
