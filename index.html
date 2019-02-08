@@ -7,6 +7,7 @@
     <link rel="icon" href="Images/logo/logo.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/home.css"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/manually.css"/>
     <script src="js/iframe.js"></script>
 </head>
 <body>
@@ -21,28 +22,54 @@
     <!--- Left Section List with Links -->
     <div class="fixedleftbar">
         <ul>
-            <li><div><a id='avg' onclick='avg()' href="pages/avg.html">Average Of Numbers</a></div></li>
+            <li><div onclick="clicked(1)"><a id='avg'>Average Of Numbers</a></div></li>
         </ul>
         <ul>
-            <li><div><a id='roots' onclick='roots()' href="pages/roots.html">Finding Roots Of QE</a></div></li>
+            <li><div onclick="clicked(2)"><a id='roots'>Finding Roots Of QE</a></div></li>
         </ul>
         <ul>
-            <li><div><a id='pandc' onclick='pandc()'href="pages/pandc.html">Permutuation and Combination</a></div></li>
+            <li><div onclick="clicked(3)"><a id='pandc'>Permutuation and Combination</a></div></li>
         </ul>
         <ul>
-            <li><div><a id='table' onclick='table()' href="pages/table.html">Table of Number</a></div></li>
+            <li><div onclick="clicked(4)"><a id='table'>Table of Number</a></div></li>
         </ul>
         <ul>
-            <li><div><a id='area' onclick='area()' href="pages/area.html">Area Of Different Shapes</a></div></li>
+            <li><div onclick="clicked(5)"><a id='area'>Area Of Different Shapes</a></div></li>
         </ul>
     </div>
 
     <!-- Wrapper Area -->
-    <div class="wrapper">
+    <div class="iframe_wrapper">
         <iframe id="frame" src="/pages/avg.html"></iframe>
     </div>
     <!--Footer-->
     <div class="foot"></div>
+
+    
+    <script>
+            function clicked(num){
+                var num = num;
+                switch(num){
+                    case 1 : document.getElementById('frame').src = "/pages/avg.html"
+                            break;
+                        
+                    case 2 : document.getElementById('frame').src = "/pages/roots.html"
+                            break;
+                            
+                    case 3 : document.getElementById('frame').src = "/pages/pandc.html"
+                            break;
+                            
+                    case 4 : document.getElementById('frame').src = "/pages/table.html"
+                            break;
+                            
+                    case 5 : document.getElementById('frame').src = "/pages/area.html"
+                            break;
+
+                    default: document.getElementById('frame').src = "/pages/area.html"
+                            break;
+                }
+            }
+    </script>
 
 </body>
 </html>
