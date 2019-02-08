@@ -7,12 +7,24 @@
 </head>
 <body>
     <div class="wrapper">
+        <select id="input">
+            <option value="3">Traingle</option>
+
+            <option value="4">Rectangle</option>
+            
+            <option value="0">Circle</option>
+        </select>
+        <button onclick="getf()">Get Fields</button>
+
+        <!---
         <label>Enter the Length</label><br>
         <input type="text" name="len" id="len"><br><br>
         
         <label>Enter the Bredth</label><br>
         <input type="text" name="bre" id="bre"><br><br>
         <button onclick="op()">Calculate</button>
+        -->
+        <iframe id="opframe"></iframe>
         <p id="op"></p>
 
     </div>
@@ -23,6 +35,20 @@
         console.log(len);
         var area = len * bre ;
         document.getElementById('op').innerHTML = "The Area of Rectangle is "+ area;
+        }
+
+        function getf(){
+            var id = document.getElementById('input').value;
+            console.log(id);
+            
+            switch(id){
+                case 3 : 
+                
+                case 4 :
+
+                case 0 :
+            }
+
         }
     </script>
 </body>
