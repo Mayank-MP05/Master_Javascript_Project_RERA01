@@ -1,5 +1,9 @@
 function clicked(num){
     var num = num;
+
+    if(num == 1){
+        document.getElementById('frame').src = "/pages/avg.html" ;
+    }
     switch(num){
         case 1 : document.getElementById('frame').src = "/pages/avg.html" ;
                 break;
@@ -17,6 +21,6 @@ function clicked(num){
                 break;
 
         default: document.getElementById('frame').src = "/pages/area.html" ;
-                break;
+
     }
 }

@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/HomeCSS/home2.css"/>
 
     <link rel="stylesheet" type="text/css" media="screen" href="css/manually.css"/>
-    <script src="js/iframe.js"></script>
+    
 </head>
 <body>
     <!---Navbar Stating Title of the Page -->
@@ -24,13 +24,13 @@
     <!--- Left Section List with Links -->
     <div class="fixedleftbar">
         <ul>
-            <li><div onclick="clicked(1)"><a id='avg'>Average Of Numbers</a></div></li>
+            <li><div onclick = "clicked(1)"><a id='avg'>Average Of Numbers</a></div></li>
         </ul>
         <ul>
             <li><div onclick="clicked(2)"><a id='roots'>Finding Roots Of QE</a></div></li>
         </ul>
         <ul>
-            <li><div onclick="clicked(3)"><a id='pandc'>Permutuation and Combination</a></div></li>
+            <li><div onclick = "clicked(3)"><a id='pandc'>Permutuation and Combination</a></div></li>
         </ul>
         <ul>
             <li><div onclick="clicked(4)"><a id='table'>Table of Number</a></div></li>
@@ -42,7 +42,7 @@
 
     <!-- Wrapper Area -->
     <div class="iframe_wrapper">
-        <iframe id="frame" ></iframe>
+        <iframe id="iframe_used" src="about:blank"></iframe>
     </div>
     <!--Footer-->
     <div class="foot">
@@ -54,23 +54,24 @@
     function clicked(num){
     var num = num;
     console.log(num);
+
     switch(num){
-        case 1 : document.getElementById('frame').src = "/pages/avg.html" ;
+        case 1 : document.getElementById('iframe_used').src = "/pages/avg.html" ;
                 break;
             
-        case 2 : document.getElementById('frame').src = "/pages/roots.html" ;
+        case 2 : document.getElementById('iframe_used').src = "/pages/roots.html" ;
                 break;
                 
-        case 3 : document.getElementById('frame').src = "/pages/pandc.html" ;
+        case 3 : document.getElementById('iframe_used').src = "/pages/pandc.html" ;
                 break;
                 
-        case 4 : document.getElementById('frame').src = "/pages/table.html" ;
+        case 4 : document.getElementById('iframe_used').src = "/pages/table.html" ;
                 break;
                 
-        case 5 : document.getElementById('frame').src = "/pages/area.html" ;
+        case 5 : document.getElementById('iframe_used').src = "/pages/area.html" ;
                 break;
 
-        default: document.getElementById('frame').src = "/pages/area.html" ;
+        default: document.getElementById('iframe_used').src = "/pages/area.html" ;
         }
     }
     </script>

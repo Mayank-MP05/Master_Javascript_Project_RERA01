@@ -12,3 +12,19 @@
     height: 100%;
     border: 5px solid brown;
 }
+
+.fixedleftbar ul li div {
+    -webkit-padding-before: 0%;
+            padding-block-start: 0%;
+    background-color: aqua;
+    color: black;
+    
+    padding: 5%;
+    margin: 5%;
+}
+
+.fixedleftbar ul li div:hover {
+   background-color: white;
+   text-decoration: bold;
+   color: black;
+}
