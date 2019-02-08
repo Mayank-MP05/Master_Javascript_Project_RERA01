@@ -10,7 +10,8 @@
 .iframe_wrapper iframe{
     width: 100%;
     height: 100%;
-    border: 5px solid brown;
+    padding: 0%;
+    border: 5px solid black;
 }
 
 .fixedleftbar ul li div {
