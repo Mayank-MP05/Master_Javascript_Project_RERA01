@@ -60,23 +60,18 @@
     var num = num;
     console.log(num);
 
-    switch(num){
-        case 1 : document.getElementById('iframe_used').src = "pages/avg.html" ;
-                break;
-            
-        case 2 : document.getElementById('iframe_used').src = "pages/roots.html" ;
-                break;
-                
-        case 3 : document.getElementById('iframe_used').src = "pages/pandc.html" ;
-                break;
-                
-        case 4 : document.getElementById('iframe_used').src = "pages/table.html" ;
-                break;
-                
-        case 5 : document.getElementById('iframe_used').src = "pages/area.html" ;
-                break;
-
-        default: document.getElementById('iframe_used').src = "pages/area.html" ;
+    if(num == 1){
+        document.getElementById('iframe_used').src = "pages/avg.html" ;
+    }else if(num == 2){   
+        document.getElementById('iframe_used').src = "pages/roots.html" ;
+    }else if(num == 3){
+        document.getElementById('iframe_used').src = "pages/pandc.html" ;
+    }else if(num == 4){
+        document.getElementById('iframe_used').src = "pages/table.html" ;
+    }else if(num == 5){    
+        document.getElementById('iframe_used').src = "pages/area.html" ;
+    }else{    
+        document.getElementById('iframe_used').src = "pages/area.html" ;
         }
     }
     </script>
