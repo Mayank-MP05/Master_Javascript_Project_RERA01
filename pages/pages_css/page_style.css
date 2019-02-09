@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+
+*{
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 1.5%;
+}
+
+.wrapper{
+    width: 50%;
+}
+
+
+.wrapper input{
+    width: 100%;
+    border-radius: 10%;
+}
+
+button{
+    width: 100%;
+    background-color: #1aea17;
+    color: black;
+    border-radius: 50vh;
+    border: none;
+    padding: 2.5%;
+}
+
+button:hover{
+    background-color: #179215;
+
+}
+
+input{
+    background-color: rgb(245, 226, 226);
+    border-radius: 50vh;
+    height: 25px;
+}
+
+input:hover{
+    background-color: white;
+    color: black;
+}
+
+/* Table Page Styling */
+#table_id{
+    border: 10px solid black;
+    padding: 2%;
+}
+
+th{
+    border: 7px solid black;
+    padding : 3.5%;      
+}
+td,tr{
+    border: 5px solid black;
+    padding: 2.5%;
+}
+
+/* PandC Page Styling */
+
+.gris{
+    display: flex;
+}
+
+.gris button{
+    padding: 2.5%;
+    grid-template-columns: 1fr 1fr;
+    margin: 2%;
+}
