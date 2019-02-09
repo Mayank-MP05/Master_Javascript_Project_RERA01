@@ -14,3 +14,20 @@ if(width < 410){
 
 }
 }
+
+function getl(){
+        var ele = document.getElementsByClassName('fixedleftbar');
+        document.getElementsByClassName('fixedleftbar').href = 'css/responsive/mobile_getl.css';
+
+        if(ele.style.visibility === 'hidden'){
+                ele.style.visibility = 'block';
+        }else if(ele.style.visibility === 'block'){
+                ele.style.visibility = 'hidden';
+        }
+      
+}
+
+function mobilegetlist(){
+        var value_to_pass = document.getElementById("mobile_select").value ;
+        clicked(value_to_pass);
+}

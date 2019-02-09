@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="" id="home1"/>
     <link rel="stylesheet" type="text/css" media="screen" href="" id="home2"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="" id="getl"/>
     <link rel="stylesheet" type="text/css" media="screen" href="" id="manually"/>
     
     <link rel="stylesheet" href="" id="csslink">
@@ -23,6 +24,14 @@
         <p>Made Just For Fun<br>#Trying_Javascript</p>
         <button onclick="showbar()">Press Me</button>
     </div>
+    <select id="mobile_select">
+        <option value='1'>Average Calculation</option>
+        <option value='2'>Finding Roots Of QE</option>
+        <option value='3'>Permutuation And Combination</option>
+        <option value='4'>Table Generator</option>
+        <option value='5'>Area of Different Shapes</option>
+    </select>
+    <button onclick="mobilegetlist()" id="getlist">Get List</button>
 
     <!--- Left Section List with Links -->
     <div class="fixedleftbar" id="leftbar" style="display:block">
@@ -35,7 +44,7 @@
             <li><div onclick="clicked(5)"><a id='area'>Area Of Different Shapes</a></div></li>
         </ul>
     </div>
-
+   
     <!-- Wrapper Area -->
     <div class="iframe_wrapper" id="iframe_wrapper">
         <iframe id="iframe_used" src="about:blank"></iframe>
@@ -52,22 +61,22 @@
     console.log(num);
 
     switch(num){
-        case 1 : document.getElementById('iframe_used').src = "/pages/avg.html" ;
+        case 1 : document.getElementById('iframe_used').src = "pages/avg.html" ;
                 break;
             
-        case 2 : document.getElementById('iframe_used').src = "/pages/roots.html" ;
+        case 2 : document.getElementById('iframe_used').src = "pages/roots.html" ;
                 break;
                 
-        case 3 : document.getElementById('iframe_used').src = "/pages/pandc.html" ;
+        case 3 : document.getElementById('iframe_used').src = "pages/pandc.html" ;
                 break;
                 
-        case 4 : document.getElementById('iframe_used').src = "/pages/table.html" ;
+        case 4 : document.getElementById('iframe_used').src = "pages/table.html" ;
                 break;
                 
-        case 5 : document.getElementById('iframe_used').src = "/pages/area.html" ;
+        case 5 : document.getElementById('iframe_used').src = "pages/area.html" ;
                 break;
 
-        default: document.getElementById('iframe_used').src = "/pages/area.html" ;
+        default: document.getElementById('iframe_used').src = "pages/area.html" ;
         }
     }
     </script>
