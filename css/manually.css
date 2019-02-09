@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+
+
+
 .iframe_wrapper{
     background-color: aqua;
     margin-left: 258px;
@@ -48,4 +53,8 @@
 .navbar h1,p{
     vertical-align: center;
     margin: 1.5%;
+}
+
+*{
+    font-family: 'Ubuntu', sans-serif;
 }
