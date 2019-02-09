@@ -2,8 +2,5 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu');
 
 @media only screen and (max-width: 400px) {
-    body{
-        display: none;
-    }
 
 }

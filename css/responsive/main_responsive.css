@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+@media only screen and (max-width: 400px) {
+    body{
+        max-width: 400px;
+    }
+    .navbar{
+      width: 100%;
+      height: 80px;
+    }
+
+    .navbar img{
+        height: 100%;
+        width: auto;
+        float: left;
+    }
+    .navbar h1{
+        display: none;
+    }
+    .navbar p{
+        float: right;
+        padding-top: 20px;
+    }
+
+    
+}
