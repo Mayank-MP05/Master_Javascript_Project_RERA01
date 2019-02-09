@@ -2,7 +2,12 @@ function showbar(){
     
 var width = window.innerWidth;
 var x = document.getElementById("leftbar");
+
+document.getElementById('home1').href = 'css/HomeCSS/home.css';
+document.getElementById('manually').href = 'css/manually.css';
  
+
+
 if(width < 410){
         document.getElementById('home1').href = '';
         document.getElementById('home2').href = '';

@@ -58,3 +58,10 @@
 .foot{
     margin-bottom: 0%;
 }
+
+
+@media only screen and (max-width: 400px) {
+    .fixedleftbar{
+      display: none;
+    }
+  }

@@ -27,7 +27,21 @@
 }
 
 button{
-    width: 87.5%;
+    width: 90%;
+}
+
+.gris{
+    display: flex;
+    flex-direction: column;
+    padding: 0%;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+}
+
+.gris button{
+
 }
 
 }
