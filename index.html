@@ -6,13 +6,11 @@
     <title>Getting Started With Javascript|Mayank_MP5</title>
     <link rel="icon" href="Images/logo/logo.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/HomeCSS/home.css"/>
-    <link rel="stylesheet" type="text/css" media="screen" href="css/HomeCSS/home2.css"/>
-
-    <link rel="stylesheet" type="text/css" media="screen" href="css/manually.css"/>
-    <link rel="stylesheet" href="css/responsive/main_responsive.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/HomeCSS/home.css" id="home1"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/HomeCSS/home2.css" id="home2"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/manually.css" id="manually"/>
     
-
+    <link rel="stylesheet" href="" id="csslink">
 </head>
 <body>
 
@@ -23,11 +21,11 @@
         <img src="Images/Logo/logo.png">
         <h1>Javascript Practice</h1>
         <p>Made Just For Fun<br>#Trying_Javascript</p>
+        <button onclick="showbar()">Press Me</button>
     </div>
 
-
     <!--- Left Section List with Links -->
-    <div class="fixedleftbar">
+    <div class="fixedleftbar" id="leftbar" style="display:block">
         <h1 style="text-align:center;font-size:40px">Examples :-</h1>
         <ul>
             <li><div onclick = "clicked(1)"><a id='avg'>Average Of Numbers</a></div></li>
@@ -39,7 +37,7 @@
     </div>
 
     <!-- Wrapper Area -->
-    <div class="iframe_wrapper">
+    <div class="iframe_wrapper" id="iframe_wrapper">
         <iframe id="iframe_used" src="about:blank"></iframe>
     </div>
     <!--Footer-->
