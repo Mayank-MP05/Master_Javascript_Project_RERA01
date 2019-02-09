@@ -56,6 +56,14 @@
 }
 
 .foot{
+    margin-bottom: 0px;
+    margin-top: 24px;
+    background-color: black;
+    color: white;
+}
+
+.foot p{
+    float: right;
     margin-bottom: 0%;
 }
 
