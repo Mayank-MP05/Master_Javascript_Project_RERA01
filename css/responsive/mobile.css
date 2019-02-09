@@ -10,6 +10,7 @@ body{
     height: 100%;
     width: auto;
     float: left;
+    display: none;
 }
 .navbar h1{
     display: none;
