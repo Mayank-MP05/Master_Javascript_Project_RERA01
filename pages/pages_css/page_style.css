@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
 
 
 *{
@@ -28,6 +29,16 @@ button{
 button:hover{
     background-color: #179215;
 
+}
+
+.wrapper h1{
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+table{
+    align-content: center;
 }
 
 input{
